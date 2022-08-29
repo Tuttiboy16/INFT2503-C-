@@ -1,0 +1,7 @@
+Dersom man skriver
+
+  char *line = nullptr;
+  strcpy(line, "Dette er en tekst");
+  
+vil teksten bli lagret på samme plass som "line" peker til, og det kan være hvor som helst.
+Det som da kan skje er at det kan ødelegge andre ting, eller så kan den selv bli ødelagt senere.
