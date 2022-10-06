@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anders/Dokumenter/C++/Oving_7/examples7/fraction/fraction.cpp
+fraction.hpp
+/home/anders/Dokumenter/C++/Oving_7/examples7/fraction/fraction.hpp
+cmath
+-
+iostream
+-
+sstream
+-
+string
+-
+
+/home/anders/Dokumenter/C++/Oving_7/examples7/fraction/fraction.hpp
+

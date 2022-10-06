@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/set.cpp
+set.hpp
+/home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/set.hpp
+algorithm
+-
+
+/home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/set.hpp
+vector
+-
+iostream
+-
+

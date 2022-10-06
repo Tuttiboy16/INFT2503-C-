@@ -1,0 +1,3 @@
+/home/anders/Dokumenter/C++/Oving_7/examples7/fraction/build/CMakeFiles/rebuild_cache.dir
+/home/anders/Dokumenter/C++/Oving_7/examples7/fraction/build/CMakeFiles/edit_cache.dir
+/home/anders/Dokumenter/C++/Oving_7/examples7/fraction/build/CMakeFiles/fraction.dir

@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/anders/Dokumenter/C++/Oving_7/examples7/fraction/build",
+  "command": "/usr/bin/c++    -std=c++1y -Wall -Wextra -o CMakeFiles/fraction.dir/main.cpp.o -c /home/anders/Dokumenter/C++/Oving_7/examples7/fraction/main.cpp",
+  "file": "/home/anders/Dokumenter/C++/Oving_7/examples7/fraction/main.cpp"
+},
+{
+  "directory": "/home/anders/Dokumenter/C++/Oving_7/examples7/fraction/build",
+  "command": "/usr/bin/c++    -std=c++1y -Wall -Wextra -o CMakeFiles/fraction.dir/fraction.cpp.o -c /home/anders/Dokumenter/C++/Oving_7/examples7/fraction/fraction.cpp",
+  "file": "/home/anders/Dokumenter/C++/Oving_7/examples7/fraction/fraction.cpp"
+}
+]
