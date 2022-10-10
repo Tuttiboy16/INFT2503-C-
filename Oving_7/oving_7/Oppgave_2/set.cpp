@@ -1,5 +1,6 @@
 #include "set.hpp"
 #include <algorithm>
+#include <iostream>
 
 
 using namespace std;
@@ -22,16 +23,10 @@ Set::Set(vector<int> integersIn, vector<int> integersIn2) {
       tmp.emplace_back(integersIn2.at(i));
     }
   }
+  
+  integers = tmp;
 }
 
-// Legger inn et nytt heltall dersom det ikke fins i mengden fra før
-/*bool Set::addInt(int integerIn) {
-  if(!count(integers.cbegin(), integers.cend(), integerIn)) {
-    integers.emplace_back(integerIn);
-    return true;
-  }
-  return false;
-}*/
 
 void Set::operator+(int integerIn) {
   if(!count(integers.cbegin(), integers.cend(), integerIn)) {
@@ -44,9 +39,20 @@ Set &Set::operator=(const Set &other) {
   return *this;
 }
 
+string Set::print() {
+  string output = "";
+  
+  for(size_t i = 0; i < this->integers.size(); i++) {
+    output.append(to_string(this->integers.at(i)));
+  }
+  
+  return output;
+}
+
+
 ostream &operator<<(ostream &out, const Set &set) {
   for(size_t i = 0; i < set.integers.size(); i++) {
-    out << set.integers.at(i);
+    out << set.integers.at(i) << " ";
   }
   return out;
 }

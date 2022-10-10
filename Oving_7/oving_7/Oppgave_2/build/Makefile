@@ -67,24 +67,13 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2
+CMAKE_SOURCE_DIR = /home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/build
+CMAKE_BINARY_DIR = /home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -97,11 +86,44 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	/usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+
+.PHONY : package/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/build/CMakeFiles /home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2/build/CMakeFiles /home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,30 +152,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named set
+# Target rules for targets named Oppgave_2
 
 # Build rule for target.
-set: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 set
-.PHONY : set
+Oppgave_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Oppgave_2
+.PHONY : Oppgave_2
 
 # fast build rule for target.
-set/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/set.dir/build.make CMakeFiles/set.dir/build
-.PHONY : set/fast
-
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+Oppgave_2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Oppgave_2.dir/build.make CMakeFiles/Oppgave_2.dir/build
+.PHONY : Oppgave_2/fast
 
 main.o: main.cpp.o
 
@@ -161,7 +170,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Oppgave_2.dir/build.make CMakeFiles/Oppgave_2.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -170,7 +179,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Oppgave_2.dir/build.make CMakeFiles/Oppgave_2.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -179,7 +188,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Oppgave_2.dir/build.make CMakeFiles/Oppgave_2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 set.o: set.cpp.o
@@ -188,7 +197,7 @@ set.o: set.cpp.o
 
 # target to build an object file
 set.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/set.dir/build.make CMakeFiles/set.dir/set.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Oppgave_2.dir/build.make CMakeFiles/Oppgave_2.dir/set.cpp.o
 .PHONY : set.cpp.o
 
 set.i: set.cpp.i
@@ -197,7 +206,7 @@ set.i: set.cpp.i
 
 # target to preprocess a source file
 set.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/set.dir/build.make CMakeFiles/set.dir/set.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Oppgave_2.dir/build.make CMakeFiles/Oppgave_2.dir/set.cpp.i
 .PHONY : set.cpp.i
 
 set.s: set.cpp.s
@@ -206,7 +215,7 @@ set.s: set.cpp.s
 
 # target to generate assembly for a file
 set.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/set.dir/build.make CMakeFiles/set.dir/set.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Oppgave_2.dir/build.make CMakeFiles/Oppgave_2.dir/set.cpp.s
 .PHONY : set.cpp.s
 
 # Help Target
@@ -216,9 +225,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
-	@echo "... main"
-	@echo "... set"
+	@echo "... Oppgave_2"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

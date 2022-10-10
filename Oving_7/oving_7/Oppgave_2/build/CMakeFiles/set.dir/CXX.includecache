@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/set.cpp
+/home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2/set.cpp
 set.hpp
-/home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/set.hpp
+/home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2/set.hpp
 algorithm
 -
+iostream
+-
 
-/home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/set.hpp
+/home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2/set.hpp
 vector
 -
 iostream

@@ -13,7 +13,9 @@ public:
   Set(vector<int> integersIn, vector<int> integersIn2);
   void operator+(int integerIn);
   Set &operator=(const Set &other);
-  //bool addInt(int integerIn);
+  string print();
 };
 
 ostream &operator<<(ostream &out, const Set &set);
+
+

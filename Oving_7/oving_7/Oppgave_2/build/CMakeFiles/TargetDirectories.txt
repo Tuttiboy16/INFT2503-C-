@@ -1,4 +1,5 @@
-/home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/build/CMakeFiles/rebuild_cache.dir
-/home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/build/CMakeFiles/edit_cache.dir
-/home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/build/CMakeFiles/set.dir
-/home/anders/Dokumenter/C++/Oving_7/examples7/Oppgave_2/build/CMakeFiles/main.dir
+/home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2/build/CMakeFiles/edit_cache.dir
+/home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2/build/CMakeFiles/package_source.dir
+/home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2/build/CMakeFiles/rebuild_cache.dir
+/home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2/build/CMakeFiles/package.dir
+/home/debian/Documents/INFT2503-CPP/Oving_7/oving_7/Oppgave_2/build/CMakeFiles/Oppgave_2.dir
