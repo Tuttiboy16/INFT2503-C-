@@ -5,8 +5,7 @@ using namespace std;
 int main() {
   
   // Lage ny tom mengde
-  vector<int> integersIn {};
-  Set set1(integersIn);
+  Set set1;
   
   cout << "Set 1: " << set1 << endl;
   

@@ -5,12 +5,14 @@
 
 using namespace std;
 
-// Lager enten en ny mengde som ikke har noen elementer, eller med elementer man gir til konstruktøren
+Set::Set() {
+  integers = vector<int> {};
+}
+
 Set::Set(vector<int> integersIn) {
   integers = integersIn;
 }
 
-// lager en ny mengde som er unionen av to vectorer
 Set::Set(vector<int> integersIn, vector<int> integersIn2) {
   vector<int> tmp;
   

@@ -6,7 +6,7 @@ using namespace std;
 
 class Set {
 public:
-  vector<int> integers = {5, 23, 6, 12, 7, 8, 2, 1, 6, 3, 65};
+  vector<int> integers;
   
   Set();
   Set(vector<int> integersIn);
