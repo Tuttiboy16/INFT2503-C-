@@ -1,3 +1,0 @@
-/home/anders/Dokumenter/C++/Oving_7/examples7/build/CMakeFiles/rebuild_cache.dir
-/home/anders/Dokumenter/C++/Oving_7/examples7/build/CMakeFiles/edit_cache.dir
-/home/anders/Dokumenter/C++/Oving_7/examples7/build/CMakeFiles/surface.dir
