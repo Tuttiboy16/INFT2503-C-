@@ -20,11 +20,7 @@ bool equal_test(Type a, Type b) {
 }
 
 bool equal_test(double a, double b) {
-  if (abs(a - b) < 0.00001) {
-    cout << "Equal doubles!" << endl;
-    return true;
-  }
-
-  cout << "Not equal doubles!" << endl;
-  return false;
+  bool exp = abs(a - b) < 0.00001;
+  cout << (exp ? "Equal doubles!" : "Not equal doubles!") << endl;
+  return exp;
 }

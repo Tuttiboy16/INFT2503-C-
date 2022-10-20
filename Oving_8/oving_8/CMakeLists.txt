@@ -4,4 +4,5 @@ project(oving_8)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall -Wextra")
 
-add_executable(oving_8 oppgave_1.cpp oppgave_2.cpp point.cpp)
+add_executable(oppgave_1 oppgave_1.cpp)
+add_executable(oppgave_2 oppgave_2.cpp)
